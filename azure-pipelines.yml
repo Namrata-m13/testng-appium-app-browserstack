@@ -18,6 +18,7 @@ steps:
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'BrowserStack connection'
+    browserstackLocal: true
 
 - task: Maven@3
   inputs:
@@ -29,7 +30,9 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install'
-    
+
+- task: BrowserStackStopLocal@0
+
 - task: BrowserStackResults@0
   displayName: 'BrowserStack Results.'
   continueOnError: true
