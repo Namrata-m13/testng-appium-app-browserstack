@@ -21,7 +21,7 @@ steps:
 
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(system.defaultWorkingDirectory)/testng-appium-app-browserstack/android/testng-examples/pom.xml'
+    mavenPomFile: 'https://github.com/Namrata-m13/testng-appium-app-browserstack/tree/master/android/testng-examples'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
