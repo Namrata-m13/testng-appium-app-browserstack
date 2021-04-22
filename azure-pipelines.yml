@@ -22,7 +22,7 @@ steps:
 
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(system.defaultWorkingDirectory)/android/testng-examples/pom.xml'
+    mavenPomFile: '$(system.defaultWorkingDirectory)/android/testng-examples/src/test/resources/com/browserstack/run_first_test/first.testng.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
