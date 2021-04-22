@@ -31,4 +31,6 @@ steps:
     goals: 'clean install'
     
 - task: BrowserStackResults@0
+  displayName: 'BrowserStack Results.'
+  continueOnError: true
 
